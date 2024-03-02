@@ -38,11 +38,6 @@ void printFib(int n)
 int main()
 {
 
-	int n;
-    std::cout<<"Enter: ";
-    std::cin>>n;
-
-	// Function Call
-	printFib(n);
+	cout<<(int)(-0.5);
 	return 0;
 }

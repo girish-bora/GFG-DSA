@@ -1,13 +1,18 @@
 #include <iostream>
 
 int gcd(int n, int m){
-    while(n!=m){
+    //Euclidean algo
+    /*while(n!=m){
         if(n>m)
             n=n-m;
         else
             m=m-n;
     }
-    return n;
+    return n;*/
+    if(m==0)
+        return n;
+    else
+        return gcd(m,n%m);
 }
 
 int main(){

@@ -1,6 +1,7 @@
 // C++ Program to print the fibonacci series
 // using iteration (loops)
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 // Function to print fibonacci series
@@ -35,9 +36,6 @@ void printFib(int n)
 }
 
 // Driver code
-int main()
-{
-
-	cout<<(int)(-0.5);
-	return 0;
+int main(){
+	std::cout<<(6*-1%34);
 }

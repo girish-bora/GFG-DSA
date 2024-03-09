@@ -1,7 +1,7 @@
 // C++ Program to print the fibonacci series
 // using iteration (loops)
 #include <iostream>
-#include <math.h>
+#include <cmath>
 using namespace std;
 
 // Function to print fibonacci series
@@ -35,7 +35,28 @@ void printFib(int n)
 	}
 }
 
+int maxConsecutiveOnes(int n)
+    {
+        // code here
+        int maxctr=0,ctr=0;
+        while(n){
+            if(n%2==1)
+                ctr++;
+            else{
+                if(ctr>maxctr){
+                    maxctr=ctr;
+                    ctr=0;
+                }
+                else
+                    ctr=0;
+            }
+            n/=2;
+        }
+        return std::max(maxctr,ctr);
+    }
+
 // Driver code
 int main(){
-	std::cout<<(6*-1%34);
+	int x=std::pow(2,3);
+	std::cout<<x;
 }

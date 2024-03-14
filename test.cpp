@@ -2,6 +2,7 @@
 // using iteration (loops)
 #include <iostream>
 #include <cmath>
+#include<string>
 using namespace std;
 
 // Function to print fibonacci series
@@ -57,6 +58,7 @@ int maxConsecutiveOnes(int n)
 
 // Driver code
 int main(){
-	int x=std::pow(2,3);
-	std::cout<<x;
+	std::string x="51";
+	int a=int(x[0]);
+	std::cout<<a;
 }

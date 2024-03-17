@@ -58,7 +58,8 @@ int maxConsecutiveOnes(int n)
 
 // Driver code
 int main(){
-	std::string x="51";
-	int a=int(x[0]);
-	std::cout<<a;
+	int a=10;
+	std::cout<<a<<" "<<&a<<endl;
+	a=21;
+	std::cout<<a<<" "<<&a;
 }

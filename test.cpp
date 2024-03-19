@@ -38,7 +38,7 @@ void printFib(int n)
 
 int maxConsecutiveOnes(int n)
     {
-        // code here
+
         int maxctr=0,ctr=0;
         while(n){
             if(n%2==1)

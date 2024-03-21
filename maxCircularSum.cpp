@@ -4,7 +4,7 @@ int maxNormalSum(int arr[], int n){
     int maxsum=arr[0];
     int maxending=arr[0];
     for(int i=1;i<n;i++){
-        maxending=std::max(maxending,maxending+arr[i]);
+        maxending=std::max(arr[i],maxending+arr[i]);
         maxsum=std::max(maxsum,maxending);
     }
     return maxsum;

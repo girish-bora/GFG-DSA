@@ -22,7 +22,7 @@ int maxCircularSum(int arr[], int n)
         arr[i]=-arr[i];
     }
     int maxCircularSum=(maxsum+maxNormalSum(arr,n));
-    return maxCircularSum;
+    return std::max(maxCircularSum,normalsum);
 }
 
 int main(){
